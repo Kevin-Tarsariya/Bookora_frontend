@@ -21,7 +21,7 @@ const ViewBookDetails = () => {
   useEffect(() => {
     const fetchRecentBooks = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/v1/get-book-by-id/${id}`);
+        const response = await axios.get(`https://bookora-backend-4nea.onrender.com/api/v1/get-book-by-id/${id}`);
         setData(response.data.data);
       } catch (error) {
         console.error("Error fetching book details:", error);

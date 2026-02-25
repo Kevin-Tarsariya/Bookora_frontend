@@ -11,7 +11,7 @@ const BookCard = ({ data, favourite }) => {
 
   const handleRemoveBook = async () => {
     const response = await axios.put(
-      "http://localhost:3000/api/v1/remove-book-from-favourite",
+      "https://bookora-backend-4nea.onrender.com/api/v1/remove-book-from-favourite",
       {},
       { headers }
     );

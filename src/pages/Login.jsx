@@ -35,7 +35,7 @@ const Login = () => {
     if (!validate()) return;
 
     try {
-      const response = await axios.post("http://localhost:3000/api/v1/sign-in", values);
+      const response = await axios.post("https://bookora-backend-4nea.onrender.com/api/v1/sign-in", values);
 
       dispatch(authActions.login());
       dispatch(authActions.changeRole(response.data.role));

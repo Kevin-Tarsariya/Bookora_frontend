@@ -20,7 +20,7 @@ const Profile = () => {
 
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/get-user-information",
+          "https://bookora-backend-4nea.onrender.com/api/v1/get-user-information",
           { headers }
         );
         setUserInfo(response.data);

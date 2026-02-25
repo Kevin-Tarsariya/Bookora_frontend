@@ -19,7 +19,7 @@ const AllOrders = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/v1/get-all-orders", { headers });
+            const response = await axios.get("https://bookora-backend-4nea.onrender.com/api/v1/get-all-orders", { headers });
             setAllOrders(response.data.data);
         } catch (err) {
             console.error("Failed to fetch orders:", err);

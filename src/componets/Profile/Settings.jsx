@@ -26,7 +26,7 @@ const Settings = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/get-user-information", {
+        const res = await axios.get("https://bookora-backend-4nea.onrender.com/api/v1/get-user-information", {
           headers,
         });
         const data = res.data;
@@ -79,7 +79,7 @@ const Settings = () => {
 
     try {
       const res = await axios.put(
-        "http://localhost:3000/api/v1/update-profile",
+        "https://bookora-backend-4nea.onrender.com/api/v1/update-profile",
         formValues,
         { headers }
       );

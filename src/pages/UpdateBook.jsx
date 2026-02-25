@@ -43,7 +43,7 @@ const UpdateBook = () => {
                 alert("All fields are required");
             } else {
                 const response = await axios.put(
-                    "http://localhost:3000/api/v1/update-book",
+                    "https://bookora-backend-4nea.onrender.com/api/v1/update-book",
                     Data,
                     { headers }
                 );
@@ -67,7 +67,7 @@ const UpdateBook = () => {
         const fetchRecentBooks = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:3000/api/v1/get-book-by-id/${id}`
+                    `https://bookora-backend-4nea.onrender.com/api/v1/get-book-by-id/${id}`
                 );
                 setData(response.data.data);
             } catch (error) {
