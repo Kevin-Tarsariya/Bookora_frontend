@@ -1,7 +1,3 @@
-Here’s a professional and clean **GitHub README.md** for your project:
-
----
-
 # 📚 Bookora – Online Book Store (Frontend)
 
 **Bookora** is an online bookstore web application developed as a college mini project using the **MERN Stack** — MongoDB, Express.js, React.js, and Node.js.
